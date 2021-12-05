@@ -15,6 +15,8 @@ COPY ./vue_app/package*.json ./
 # Install npm
 RUN npm install
 
+RUN npm i -g @vue/cli
+
 # Copy the source. Describe in the order of 
 # [Source path of local environment] and 
 # [Path to be placed in container]
@@ -28,4 +30,4 @@ EXPOSE 8080
 
 # Start Vue Server
 CMD [ "http-server", "dist" ]
-
+# CMD ["npm", "run", "serve"]

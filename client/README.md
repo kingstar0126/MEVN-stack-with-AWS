@@ -56,3 +56,13 @@ $ docker ps
 $ docker stop vue-nginx-container
 
 ```
+
+
+### ref
+https://mherman.org/blog/dockerizing-a-vue-app/
+https://www.middlewareinventory.com/blog/docker-vuejs/#Test_Our_Web_Application_Locally_Before_Packaging_it_as_Container
+https://towardsdatascience.com/deploying-a-docker-container-with-ecs-and-fargate-7b0cbc9cd608
+https://www.loginradius.com/blog/async/implementing-authentication-on-vuejs-using-jwt/
+https://github.com/sujaykundu777/yelb
+https://github.com/Kong/kong
+https://aws.amazon.com/blogs/containers/deploy-applications-on-amazon-ecs-using-docker-compose/
