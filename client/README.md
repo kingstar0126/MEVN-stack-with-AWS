@@ -13,7 +13,7 @@ In the terminal :
 $ cd client
 # -t - tag the image
 # . - specifies the path where Dockerfile is located
-$ docker build -f -t vueapp:0.0.1 .
+$ docker build -t vueapp:0.0.1 .
 
 # check the created images
 $ docker images
