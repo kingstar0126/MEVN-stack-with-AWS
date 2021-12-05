@@ -1,10 +1,8 @@
-### Client app
+### Vue Client App
 
-Vue 3 frontend running using docker
+Vue3 - frontend running using docker
 
-
-### Starting a container using Dockerfile
-
+### Getting Started (Run locally)
 In the terminal :
 
 ### Build the image for vue app.
@@ -22,7 +20,7 @@ $ docker images
 ### Run the image
 
 ```s
-$ docker run --name vue_app_container --rm --it -d -p 8080:8080 vueapp:0.0.1
+$ docker run --name vue_app_container --rm -it -d -p 8080:8080 vueapp:0.0.1
 
 # --name - specify the name of the container, makes it easier to manage
 # --rm - Automatically deletes the container when it is stopped.
@@ -39,7 +37,22 @@ $ docker run --name vue_app_container --rm --it -d -p 8080:8080 vueapp:0.0.1
 $ docker ps 
 
 # Stop running containers 
-$ docker stop
+$ docker stop vue-app-container
 ```
 
+### For production build 
 
+```s
+# build the image
+$ docker build -f Dockerfile.prd -t vueapp-nginx:0.0.1 .
+
+# run the container
+$ docker run --name vue-nginx-container --rm -it -d  -p 8080:80 vueapp-nginx:0.0.1
+
+# display running containers 
+$ docker ps 
+
+# stop running containers 
+$ docker stop vue-nginx-container
+
+```

@@ -1,0 +1,22 @@
+FROM node:lts-alpine as build-stage
+
+WORKDIR /app
+
+COPY ./vue_app/package.json ./
+
+RUN npm install
+
+COPY ./vue_app .
+
+RUN npm run build
+
+# prepare the production image
+FROM nginx:stable-alpine as prd-stage
+
+WORKDIR /usr/share/nginx/html
+
+COPY --from=build-stage /app/dist/ .
+
+EXPOSE 80
+
+CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
