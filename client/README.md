@@ -3,7 +3,30 @@
 Vue3 - frontend running using docker
 
 ### Getting Started (Run locally)
-In the terminal :
+
+You need docker installed to run the webapp. Enter the below commands in the terminal :
+
+
+### Method 1 : Using Docker Compose
+Use docker-compose to run the vue-app easily without building images manually.
+
+```s
+$ cd client
+
+# -d - starts in the background
+$ docker-compose up -d 
+
+# terminate the container 
+$ docker-compose down
+
+# update changes to the container
+$ docker-compose build
+```
+
+
+### Method 2 :Using Docker
+
+In this method, you have to manually create the images and run the container using Docker.
 
 ### Build the image for vue app.
 
@@ -41,6 +64,10 @@ $ docker stop vue-app-container
 ```
 
 ### For production build 
+
+We have a seperate Dockerfile.prd that is used to build the production build of the vue webapp. You can use the below
+commands to build the image and run the container. It uses nginx as server.
+
 
 ```s
 # build the image
