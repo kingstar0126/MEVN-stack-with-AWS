@@ -1,8 +1,14 @@
+# replace content of this file with docker-compose.dev for development
+# and docker-compose.prd for production
 version: '3'
 services:
   vue_app:
-    build: .
-    image: vueapp-nginx:0.0.1
-    container_name: vue-nginx-container
+    build:
+      context: ./vue_app
+      dockerfile: Dockerfile.dev
+    container_name: vue-nginx-dev-container
     ports:
-      - "8080:80"
+      - "8080:8080"
+    volumes:
+      - ./vue_app:/app
+      - /app/node_modules

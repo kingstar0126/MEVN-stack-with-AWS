@@ -22,8 +22,18 @@ $ docker-compose down
 # update changes to the container
 $ docker-compose build
 ```
+#### Run development mode
 
+```s
+$ docker-compose -f docker-compose.dev.yml up
+```
+or you can directly copy the content of docker-compose.dev inside docker-compose.yml and run the below command to run the dev:
 
+```s
+$ docker-compose up
+```
+
+This will start the vue-app in http://localhost:8080 (in watch mode)
 ### Method 2 :Using Docker
 
 In this method, you have to manually create the images and run the container using Docker.
@@ -84,6 +94,48 @@ $ docker stop vue-nginx-container
 
 ```
 
+### Useful Docker Compose commands
+
+```s
+# check docker-compose version
+$ docker-compose --version
+
+# create and start containers
+$ docker-compose up
+
+# start services with detached mode
+$ docker-compose -d up
+
+# start specific service
+$ docker-compose up <service-name>
+
+# list images
+$ docker-compose images
+
+# build with no cache
+$ docker-compose build --no-cache
+
+# list containers
+$ docker-compose ps
+
+# start service
+$ docker-compose start
+
+# stop services
+docker-compose stop
+
+# display running containers
+$ docker-compose top
+
+# kill services
+$ docker-compose kill
+
+# remove stopped containers
+$ docker-compose rm
+
+# stop all contaners and remove images, volumes
+$ docker-compose down
+```
 
 ### ref
 https://mherman.org/blog/dockerizing-a-vue-app/
