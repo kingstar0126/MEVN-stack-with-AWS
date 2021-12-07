@@ -27,3 +27,14 @@ Full stack MEVN app containarized using Docker built to be hosted easily using A
 - AWS Cloudfront
 - AWS Lambda
 - AWS Cloudwatch
+
+
+### ref
+https://aws.amazon.com/blogs/containers/deploy-applications-on-amazon-ecs-using-docker-compose/
+https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
+https://medium.com/bb-tutorials-and-thoughts/vue-js-local-development-with-docker-compose-275304534f7c
+https://linuxtut.com/en/09384726105eee53bbb6/
+https://github.com/bbachi/vuejs-nodejs-example
+https://medium.com/bb-tutorials-and-thoughts/dockerizing-vue-app-with-nodejs-backend-33645f0f50ec
+/medium.com/bb-tutorials-and-thoughts/dockerizing-vue-app-with-nodejs-backend-33645f0f50ec
+https://github.com/bbachi/vuejs-nodejs-docker-compose/blob/master/api/package.json

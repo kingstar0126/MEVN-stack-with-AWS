@@ -1,6 +1,6 @@
 ### Vue Client App
 
-Vue3 - frontend running using docker
+Vue3 - Frontend web app running using Docker
 
 ### Getting Started (Run locally)
 
@@ -145,3 +145,4 @@ https://www.loginradius.com/blog/async/implementing-authentication-on-vuejs-usin
 https://github.com/sujaykundu777/yelb
 https://github.com/Kong/kong
 https://aws.amazon.com/blogs/containers/deploy-applications-on-amazon-ecs-using-docker-compose/
+https://medium.com/bb-tutorials-and-thoughts/vue-js-local-development-with-docker-compose-275304534f7c
